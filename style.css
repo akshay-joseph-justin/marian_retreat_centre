@@ -1,0 +1,215 @@
+/* Navbar */
+#navbar {
+    background-color: transparent;
+   
+    
+}
+
+.navbar-brand {
+    color: rgba(80, 173, 230, 255);
+}
+
+/* Carousel */
+.carousel-item img {
+    filter: brightness(75%);
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    
+    padding: 0.2rem 0rem;
+    
+    
+}
+
+.carousel-caption h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 2);
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#carousel-caption {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    
+    padding: 1rem 2rem;
+    
+    
+    
+}
+#carousel-caption h1{
+    font-size: 3.1rem;
+}
+
+#thumbnail-container {
+    position: relative;
+    width: 100%; /* Can be adjusted to control the width */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  #thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+  }
+  
+  /* Increase the size of the thumbnail */
+  #thumbnail-container {
+    max-width: 700px; /* Adjust the max-width to make the thumbnail larger */
+    margin: 0 auto; /* Centers the thumbnail horizontally */
+  }
+ 
+  /* Ensure the thumbnails maintain a 16:9 aspect ratio */
+.thumbnail-container {
+    position: relative;
+    width: 100%; /* Adjusts to the width of the container */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  /* Thumbnail image settings */
+  .thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+  }
+  
+  /* Play icon styling */
+  .video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px; /* Adjust size of the play icon */
+    color: white; /* White icon */
+    opacity: 0.8; /* Slight transparency */
+    pointer-events: none; /* Makes sure the icon does not block click events */
+    transition: opacity 0.3s ease;
+  }
+  
+  .thumbnail-container:hover .video-icon {
+    opacity: 1; /* Icon becomes fully visible when hovering over the thumbnail */
+  }
+  
+
+  .btn:hover {
+    background-color: rgb(1, 120, 200);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 60vh;
+    }
+
+    #carousel-caption {
+        bottom: 20%;
+        padding: 0.5rem 0rem;
+    }
+
+    #carousel-caption h1 {
+        font-size: 1.7rem;
+    }
+
+    #carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+        /* Transparent Navbar at the top */
+        #navbar {
+            background: transparent;
+            transition: background 0.3s ease;
+        }
+    
+        /* Logo Text Styling */
+        .navbar-brand p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: white;
+        }
+    
+        /* Navbar Item Styling */
+        .nav-link {
+            font-size: 1rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ff6f61; /* Accent color for hover effect */
+        }
+    
+        /* Mobile view */
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                border: none;
+            }
+            .navbar-nav {
+                text-align: center;
+            }
+        }
+    
+        /* Black Navbar when scrolled */
+        .scrolled {
+            background: black !important; /* Change to black when scrolled */
+        }
+    
+        /* Navbar Color when toggle button is clicked */
+        .toggled {
+            background: black !important; /* Black background when toggled */
+        }
+    
+        /* Customize the navbar-toggler */
+        .navbar-toggler {
+            border: none; /* Remove the border */
+        }
+    
+        /* Increase the size of the navbar-toggler-icon */
+        .navbar-toggler .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22rgba%28255,255,255,1%29%22 stroke-width%3D%222.5%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+            background-size: 2rem 2rem; /* Adjust the size of the icon */
+            width: 2.5rem; /* Increase button width */
+            height: 2.5rem; /* Increase button height */
+        }
+    
+        /* Optional: Change hover effects for better visibility */
+        .navbar-toggler:hover .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22rgba%28255,165,0,1%29%22 stroke-width%3D%222.5%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E'); /* Change hover to orange, optional */
+        }

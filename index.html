@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center mx-4" href="#">
+                <img src="img/logo.png" class="logo-holder" style="width: 80px; height: auto;">
+                <!-- <p class="pt-3 ps-2" style="font-size: 1rem; font-weight: bold; text-transform: uppercase; color: #333;">
+                    Logo Text
+                </p> -->
+            </a>
+            
+            <!-- Navbar Toggler (Hamburger Icon) -->
+            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        
+    
+            <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fw-bold" style="font-size: 1.2rem;" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="font-size: 1.2rem;" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="font-size: 1.2rem;" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="font-size: 1.2rem;" href="#"> Retreat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="font-size: 1.2rem;" href="#">Prayer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="font-size: 1.2rem;" href="#">Contact </a>
+                    </li>
+                   
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Custom Styles -->
+    
+    
+    <!-- JavaScript to Change Navbar Color on Scroll and Toggler Click -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    
+        // Change navbar color when toggle button is clicked in mobile view
+        const navbarToggler = document.getElementById('navbar-toggler');
+        const navbar = document.getElementById('navbar');
+    
+        navbarToggler.addEventListener('click', function() {
+            navbar.classList.toggle('toggled'); // Toggle the 'toggled' class on click
+        });
+    </script>
+    
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner.jpg" class="d-block w-100" alt="First Slide">
+                <div id="carousel-caption" class="carousel-caption">
+                    <h1 class="mb-3">MARIAN RETREAT CENTRE</h1>
+                    
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="img/banner.jpg" class="d-block w-100" alt="Second Slide">
+                <div id="carousel-caption" class="carousel-caption">
+                    <h1 class="mb-3 ">MARIAN RETREAT CENTRE</h1>
+                    
+                </div>
+            </div> -->
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+<br>
+    <section class="m-5">
+        <div class="text-center ">
+
+            <h1 class="fw-bold">Marian Retreat Centre</h1>
+            <p style="font-size: 1.2rem;">Official Charismatic Renewal Retreat Centre of <br>
+                Catholic Diocese of Kozhikode</p>
+           
+        </div>
+
+
+        <div class="container scroll-animation-text my-5">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div style="text-decoration: none; border: none;" class="card">
+                        <div class="card-body text-center">
+                            <img src="img/POPE.jpg" alt="Laptop" style="width: 200px; height: auto;">
+<br><br>
+                            <h5 class="lead font-italic card-title fw-bold" style="font-size: 1.2rem; color: red;">Pope Francis</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div style="text-decoration: none; border: none;" class="card">
+                        <div class="card-body text-center">
+                            <img src="img/Bishop.jpg" alt="Laptop" style="width: 200px; height: auto;">
+<br><br>
+                            <h5 class="lead font-italic card-title fw-bold" style="font-size: 1.2rem;  color: red;">Mar Varghese Chackalakkal</h5>
+                            <p class="fw-bold"> Bishop of Kozhikode Diocese</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div style="text-decoration: none; border: none;" class="card">
+                        <div class="card-body text-center">
+                            <img src="img/director.jpg" alt="Laptop" style="width: 200px; height: auto;">
+<br><br>
+                            <h5 class="lead font-italic card-title fw-bold" style="font-size: 1.2rem; color: red;">Rev Fr Jeevan Thaiparambil</h5>
+                            <p class="fw-bold"> Director Of Marian Retreat Centre </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="about.html" class="btn mt-4 bttn-animate text-white" style="background-color: rgb(2, 156, 254); padding: 12px 30px; border-radius: 30px; font-size: 16px; font-weight: bold; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out; display: inline-flex; align-items: center;">
+                      MORE ABOUT US
+                    </a>
+                  </div>
+                  
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <section style="background: linear-gradient(to right, #00aaff, #0055ff, #0033cc);
+" class="p-5">
+
+        <h1 class="fw-bold text-center  text-white">Upcoming Events</h1>
+        <div class="slider-container">
+          
+          
+            <div class="row scroll-animation-text">
+                <!-- Image 1 -->
+                <div class="col-lg-3 mt-5">
+                  <img src="img/poster.jpg" alt="Stock Image 1" class="img-fluid rounded" style="width: 100%; max-width: 250px;" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                </div>
+              
+                <!-- Image 2 -->
+                <div class="col-lg-3 mt-5">
+                  <img src="img/poster.jpg" alt="Stock Image 2" class="img-fluid rounded" style="width: 100%; max-width: 250px;" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                </div>
+              
+                <!-- Image 3 -->
+                <div class="col-lg-3 mt-5">
+                  <img src="img/poster.jpg" alt="Stock Image 3" class="img-fluid rounded" style="width: 100%; max-width: 250px;" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                </div>
+              
+                <!-- Image 4 -->
+                <div class="col-lg-3 mt-5">
+                  <img src="img/poster.jpg" alt="Stock Image 4" class="img-fluid rounded" style="width: 100%; max-width: 250px;" data-bs-toggle="modal" data-bs-target="#imageModal4">
+                </div>
+              </div>
+              
+              <!-- Modal Structure -->
+              <!-- Modal for Image 1 -->
+              <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/poster.jpg" alt="Stock Image 1" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal for Image 2 -->
+              <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/poster.jpg" alt="Stock Image 2" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal for Image 3 -->
+              <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/poster.jpg" alt="Stock Image 3" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal for Image 4 -->
+              <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel4" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/poster.jpg" alt="Stock Image 4" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="about.html" class="btn mt-4 bttn-animate text-white" style="background-color: rgb(2, 156, 254); padding: 12px 30px; border-radius: 30px; font-size: 16px; font-weight: bold; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out; display: inline-flex; align-items: center;">
+                  VIEW MORE
+                </a>
+              </div>
+    </section>
+
+    <section class="p-5"> 
+
+        
+            <h1 class="fw-bold text-center">Book Retreat</h1>
+<br>
+            <div class="text-center" style="outline: 0.2px solid #000; padding: 10px; border-radius: 10px;">
+                
+                <h5>HEADING</h5>
+                <p>DETAILS</p>
+                
+                <p>from - to</p>
+
+                <div class="text-center">
+                    <a href="about.html" class="btn mt-4 bttn-animate btn-primary text-white" style="">
+                      Book Now
+                    </a>
+                  </div>
+            </div>
+            <br>
+            <div class="text-center" style="outline: 0.2px solid #000; padding: 10px; border-radius: 10px;">
+                
+                <h5>HEADING</h5>
+                <p>DETAILS</p>
+                
+                <p>from - to</p>
+
+                <div class="text-center">
+                    <a href="about.html" class="btn mt-4 bttn-animate btn-primary text-white" style="">
+                      Book Now
+                    </a>
+                  </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="about.html" class="btn mt-4 bttn-animate text-white" style="background-color: rgb(2, 156, 254); padding: 12px 30px; border-radius: 30px; font-size: 16px; font-weight: bold; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out; display: inline-flex; align-items: center;">
+                  VIEW MORE
+                </a>
+              </div>
+
+    </section>
+
+
+    <section style="background: linear-gradient(to right, #00aaff, #0055ff, #0033cc);
+" class="p-5">
+
+        <h1 class="fw-bold text-center  text-white">Videos</h1>
+
+        <!-- Container for videos -->
+<div class="container scroll-animation-text my-5">
+    <div class="row">
+      <!-- Repeated video embed structure -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card" style="text-decoration: none; border: none;">
+          <a class="card-body text-center">
+            <!-- Thumbnail with 16:9 aspect ratio -->
+            <div id="thumbnail-container">
+              <img src="https://img.youtube.com/vi/moOpbcLs5cQ/0.jpg" 
+                   id="thumbnail"  class="img-fluid thumbnail" 
+                   alt="YouTube Video Thumbnail" 
+                   data-bs-toggle="modal" 
+                   data-bs-target="#videoModal2">
+                   <div class="video-icon">
+                    <i class="fa fa-play-circle"></i> <!-- Font Awesome Play Icon -->
+                  </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Repeat the same structure for additional videos -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card" style="text-decoration: none; border: none;">
+          <a class="card-body text-center">
+            <!-- Thumbnail with 16:9 aspect ratio -->
+            <div id="thumbnail-container">
+              <img src="https://img.youtube.com/vi/moOpbcLs5cQ/0.jpg" 
+                   id="thumbnail"  class="img-fluid thumbnail" 
+                   alt="YouTube Video Thumbnail" 
+                   data-bs-toggle="modal" 
+                   data-bs-target="#videoModal2">
+                   <div class="video-icon">
+                    <i class="fa fa-play-circle"></i> <!-- Font Awesome Play Icon -->
+                  </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+  
+<div class="col-md-6 col-lg-3 mb-4">
+    <div class="card" style="text-decoration: none; border: none;">
+      <a class="card-body text-center">
+        <!-- Thumbnail with 16:9 aspect ratio -->
+        <div id="thumbnail-container">
+          <img src="https://img.youtube.com/vi/moOpbcLs5cQ/0.jpg" 
+               id="thumbnail"  class="img-fluid thumbnail" 
+               alt="YouTube Video Thumbnail" 
+               data-bs-toggle="modal" 
+               data-bs-target="#videoModal2">
+               <div class="video-icon">
+                <i class="fa fa-play-circle"></i> <!-- Font Awesome Play Icon -->
+              </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="col-md-6 col-lg-3 mb-4">
+    <div class="card" style="text-decoration: none; border: none;">
+      <a class="card-body text-center">
+        <!-- Thumbnail with 16:9 aspect ratio -->
+        <div id="thumbnail-container">
+          <img src="https://img.youtube.com/vi/moOpbcLs5cQ/0.jpg" 
+               id="thumbnail"  class="img-fluid thumbnail" 
+               alt="YouTube Video Thumbnail" 
+               data-bs-toggle="modal" 
+               data-bs-target="#videoModal2">
+               <div class="video-icon">
+                <i class="fa fa-play-circle"></i> <!-- Font Awesome Play Icon -->
+              </div>
+        </div>
+      </a>
+    </div>
+  </div>
+    </div>
+  </div>
+  
+  <!-- Modal structure for video embedding -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" 
+                  src="https://www.youtube.com/embed/moOpbcLs5cQ?autoplay=1" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  style="border: none;" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 2 -->
+  <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" 
+                  src="https://www.youtube.com/embed/moOpbcLs5cQ?autoplay=1" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  style="border: none;" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 3 -->
+  <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" 
+                  src="https://www.youtube.com/embed/moOpbcLs5cQ?autoplay=1" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  style="border: none;" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 4 -->
+  <div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" 
+                  src="https://www.youtube.com/embed/moOpbcLs5cQ?autoplay=1" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  style="border: none;" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Include Font Awesome (add this inside the <head> tag if not already included) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <div class="text-center">
+      <a href="about.html" class="btn mt-4 bttn-animate text-white" style="background-color: rgb(2, 156, 254); padding: 12px 30px; border-radius: 30px; font-size: 16px; font-weight: bold; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out; display: inline-flex; align-items: center;">
+        <i class="fas fa-video" style="margin-right: 10px; font-size: 20px;"></i> MORE VIDEOS
+      </a>
+    </div>
+    
+   
+    </section>
+
+    <section>
+
+        <div class="section-container">
+            <div class="container my-2">
+              
+                
+              
+              <div class="row scroll-animation-text">
+                <div class="col-lg-6 mt-5">
+                    <img src="img/jesus.jpg" alt="Stock Image 1" class="img-fluid rounded" style="width: 100%; max-width: 400px;">
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="col-lg-">
+                    <div class="mb-4 p-4 text- contact-form">
+                        <h1 class="fw-bold text-center m-5"> SEND PRAYER REQUEST</h1>
+                        <form >
+                          <div class="form-group">
+                              <label for="name">Name</label>
+                              <input type="text" class="form-control" id="name" name="name" >
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Phone</label>
+                            <input type="text" class="form-control" id="name" name="name" >
+                        </div>
+                          <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="email" name="email" >
+                          </div>
+                          <div class="form-group">
+                              <label for="message">Prayer Request</label>
+                              <textarea class="form-control" id="message" name="message" rows="4" ></textarea>
+                          </div>
+                          <br>
+                          <button onclick="sendToWhatsapp()" type="submit" class="btn btn-primary btn-block">Send</button>
+                          <br>
+                          <p></p>
+                      </form>
+                    </div>
+                </div>
+                </div>
+            
+
+          </div>
+              </div>
+          
+
+    </section>
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS and Popper.js (for modals) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+</html>
